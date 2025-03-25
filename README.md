@@ -10,6 +10,9 @@ Tools like GitHub Actions, GitLab CI and others make git scraping adaptable to d
 
 This template includes a sample workflow to demonstrate the core git scraping capabilities. Read on to learn how to customize it!
 
+## Current Scraping Choice
+I have changed the original scraping target of the top headline to the most recently published article. I did this by inspecting the Daily Pennsylvanian's site and identifying the class sidebar-story that is only used on stories under Most Recent. I used find to get the first headline with this class. 
+
 ## Overview
 
 The workflow defined in `.github/workflows/scrape.yaml` runs on a defined schedule to:
